@@ -37,6 +37,8 @@ SOURCES += \
         Stairs.cpp \
         Stats.cpp \
         Tile.cpp \
+        entityfactory.cpp \
+        entityservice.cpp \
         main.cpp \
         mainwindow.cpp
 
@@ -53,6 +55,8 @@ HEADERS += \
         Stairs.h \
         Stats.h \
         Tile.h \
+        entityfactory.h \
+        entityservice.h \
         mainwindow.h
 
 FORMS += \
