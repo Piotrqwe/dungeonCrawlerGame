@@ -1,12 +1,12 @@
 #include "entityfactory.h"
 using namespace std;
 
-entityFactory::entityFactory()
+EntityFactory::EntityFactory()
 {
 
 }
 
-std::shared_ptr<Entity> entityFactory::createEntity(EntityType entity)
+std::shared_ptr<Entity> EntityFactory::createEntity(EntityType entity)
 {
     switch(entity){
     case EntityType::STAIRS : {
@@ -20,3 +20,6 @@ std::shared_ptr<Entity> entityFactory::createEntity(EntityType entity)
     }
     }
 }
+
+
+

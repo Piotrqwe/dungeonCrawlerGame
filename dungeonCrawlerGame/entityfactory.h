@@ -3,9 +3,12 @@
 #include "Stairs.h"
 #include <memory>
 
-class entityFactory
+class EntityFactory
 {
+private:
+    static const int DEFAULT_SPIDER_ATTACK = 10;
+    static const int DEFAULT_SPIDER_HP = 50;
 public:
-    entityFactory();
+    EntityFactory();
     std::shared_ptr<Entity> createEntity(EntityType);
 };

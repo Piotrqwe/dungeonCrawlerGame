@@ -1,11 +1,12 @@
 #pragma once
 #include "Entity.h"
+#include <memory>
 
 class Tile
 {
-    Entity* here;
+    std::shared_ptr<Entity> entity;
 public:
-    Tile();
+    Tile(std::shared_ptr<Entity>);
     ~Tile();
 };
 
