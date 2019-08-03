@@ -25,10 +25,34 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+        Entity.cpp \
+        Game.cpp \
+        Item.cpp \
+        Location.cpp \
+        Map.cpp \
+        Maploader.cpp \
+        Monster.cpp \
+        Player.cpp \
+        Room.cpp \
+        Stairs.cpp \
+        Stats.cpp \
+        Tile.cpp \
         main.cpp \
         mainwindow.cpp
 
 HEADERS += \
+        Entity.h \
+        Game.h \
+        Item.h \
+        Location.h \
+        Map.h \
+        Maploader.h \
+        Monster.h \
+        Player.h \
+        Room.h \
+        Stairs.h \
+        Stats.h \
+        Tile.h \
         mainwindow.h
 
 FORMS += \
