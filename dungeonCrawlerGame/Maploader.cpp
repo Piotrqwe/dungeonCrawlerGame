@@ -13,6 +13,8 @@ shared_ptr<Map> Load(){
 
     auto stairs = factory.createEntity<Stairs>();
 
+    auto monster = factory.createEntity<Monster>();
+
     //stairs.get()->setLocation(Location(1,2,3));
     room.tiles[0][0]=shared_ptr<Tile>(new Tile(stairs));
     room.tiles[0][1];

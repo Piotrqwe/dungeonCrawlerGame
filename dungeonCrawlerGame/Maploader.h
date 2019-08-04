@@ -2,6 +2,7 @@
 #include <string>
 #include "Map.h"
 #include "Room.h"
+#include "Monster.h"
 #include "entityfactory.h"
 #include "entityservice.h"
 #include <vector>

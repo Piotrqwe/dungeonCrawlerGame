@@ -2,7 +2,7 @@
 
 
 
-Monster::Monster()
+Monster::Monster() : Entity ()
 {
 }
 

@@ -15,7 +15,7 @@ public:
     std::shared_ptr<T> createEntity() {
         std::shared_ptr<T> t = std::shared_ptr<T>(new T());
         if (std::is_same<T, Stairs>::value){
-            static_cast<Stairs*>(t.get())->setLocation(Location(1,2,3));
+            ((Stairs*)(t.get()))->setLocation(Location(1,2,3));
         }
         return t;
     }
