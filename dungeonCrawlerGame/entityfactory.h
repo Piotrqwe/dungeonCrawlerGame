@@ -13,10 +13,10 @@ public:
 
     template <typename T, typename std::enable_if<std::is_base_of<Entity, T>::value>::type* = nullptr>
     std::shared_ptr<T> createEntity() {
+        T* t = new T();
         if (std::is_same<T, Stairs>::value){
-            Stairs* s = new Stairs();
-            s->setLocation(Location(1,2,3));
-            return std::shared_ptr<T>(s);
+            static_cast<Stairs*>(t)->setLocation(Location(1,2,3));
+            return std::shared_ptr<T>(t);
         }
         return std::shared_ptr<T>(nullptr);
     }

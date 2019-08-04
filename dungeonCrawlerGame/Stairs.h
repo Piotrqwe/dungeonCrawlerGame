@@ -9,7 +9,7 @@ class Stairs : public Entity
 public:
     void interaction();
     void setLocation(Location location);
-    Stairs(){}
+    Stairs();
 };
 
 
