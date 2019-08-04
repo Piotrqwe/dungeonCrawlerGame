@@ -18,6 +18,6 @@ public:
             static_cast<Stairs*>(t)->setLocation(Location(1,2,3));
             return std::shared_ptr<T>(t);
         }
-        return std::shared_ptr<T>(nullptr);
+        return std::shared_ptr<T>(t);
     }
 };
