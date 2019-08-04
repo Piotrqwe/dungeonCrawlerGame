@@ -8,7 +8,8 @@ class Stairs : public Entity
     Location destination;
 public:
     void interaction();
-    Stairs();
+    void setLocation(Location location);
+    Stairs(){}
 };
 
 

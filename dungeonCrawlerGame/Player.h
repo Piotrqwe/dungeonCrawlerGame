@@ -6,7 +6,7 @@
 class Player
 {
     Stats stats;
-    Location location;
+    Location location();
 public:
 
 	Player();

@@ -10,5 +10,14 @@ private:
     static const int DEFAULT_SPIDER_HP = 50;
 public:
     EntityFactory();
-    std::shared_ptr<Entity> createEntity(EntityType);
+
+    template <typename T, typename std::enable_if<std::is_base_of<Entity, T>::value>::type* = nullptr>
+    std::shared_ptr<T> createEntity() {
+        if (std::is_same<T, Stairs>::value){
+            Stairs* s = new Stairs();
+            s->setLocation(Location(1,2,3));
+            return std::shared_ptr<T>(s);
+        }
+        return std::shared_ptr<T>(nullptr);
+    }
 };

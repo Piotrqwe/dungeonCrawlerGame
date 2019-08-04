@@ -1,4 +1,4 @@
-#include "maploader.h"
+#include "Maploader.h"
 
 MapLoader::MapLoader()
 {
@@ -11,8 +11,9 @@ shared_ptr<Map> Load(){
     Room room(5,5);
 
 
-    auto stairs = factory.createEntity(EntityType::STAIRS);
-    stairs.setLocation(1,2,3);
+    auto stairs = factory.createEntity<Stairs>();
+
+    //stairs.get()->setLocation(Location(1,2,3));
     room.tiles[0][0]=shared_ptr<Tile>(new Tile(stairs));
     room.tiles[0][1];
     room.tiles[0][2];

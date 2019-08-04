@@ -7,8 +7,8 @@ class Entity
     int ID;
     int texture;
 public:
-    virtual void interaction();
+    void interaction();
+    int getType();
     Entity();
-    int getType();;
 };
 
