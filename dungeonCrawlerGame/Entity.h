@@ -1,5 +1,6 @@
 #pragma once
 #include "entityservice.h"
+#include "Player.h"
 
 class Entity
 {
@@ -7,8 +8,8 @@ class Entity
     int ID;
     int texture;
 public:
-    void interaction();
-    int getType();
+    bool interaction(Player);
+    EntityType getType();
     Entity();
 };
 

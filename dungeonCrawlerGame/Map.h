@@ -7,8 +7,8 @@ using namespace std;
 
 class Map
 {
-    Player player;
 public:
+    Player player;
     vector<Room>rooms;
     Map();
     ~Map();

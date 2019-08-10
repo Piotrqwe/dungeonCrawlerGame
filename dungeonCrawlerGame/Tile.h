@@ -4,8 +4,8 @@
 
 class Tile
 {
-    std::shared_ptr<Entity> entity;
 public:
+    std::shared_ptr<Entity> entity;
     Tile(std::shared_ptr<Entity>);
     ~Tile();
 };

@@ -5,10 +5,9 @@
 
 class Player
 {
-    Stats stats;
-    Location location();
 public:
-
+    Location location;
+    Stats stats;
 	Player();
 	~Player();
 };

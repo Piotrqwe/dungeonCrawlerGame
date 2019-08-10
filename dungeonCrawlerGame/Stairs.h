@@ -7,7 +7,7 @@ class Stairs : public Entity
 {
     Location destination;
 public:
-    void interaction();
+    bool interaction(Player);
     void setLocation(Location location);
     Stairs();
 };

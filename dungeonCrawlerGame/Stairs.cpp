@@ -10,9 +10,7 @@ Stairs::Stairs() : Entity ()
 
 }
 
-void interaction(){
-
-
-
-
+bool Stairs::interaction(Player player){
+player.location=this->destination;
+return 0;
 }

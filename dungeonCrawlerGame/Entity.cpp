@@ -5,9 +5,8 @@ Entity::Entity()
 {
 }
 
-int Entity::getType()
-{
-return 0;
+EntityType Entity::getType(){
+return this->type;
 }
 
 

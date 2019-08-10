@@ -25,6 +25,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+        Empty.cpp \
         Entity.cpp \
         Game.cpp \
         Item.cpp \
@@ -43,6 +44,7 @@ SOURCES += \
         mainwindow.cpp
 
 HEADERS += \
+        Empty.h \
         Entity.h \
         Game.h \
         Item.h \

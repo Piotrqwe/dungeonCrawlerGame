@@ -2,8 +2,8 @@
 
 class Stats
 {
-    int hp,att,def;
 public:
+    int hp,att,def;
 	Stats();
 	~Stats();
 };

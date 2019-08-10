@@ -1,11 +1,11 @@
-#ifndef EMPTY_H
-#define EMPTY_H
+#pragma once
+#include "Entity.h"
 
-
-class Empty
+class Empty : public Entity
 {
 public:
+    bool interaction(Player);
     Empty();
+    ~Empty();
 };
 
-#endif // EMPTY_H

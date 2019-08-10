@@ -4,11 +4,10 @@
 
 class Monster : public Entity
 {
-    Stats stats;
-
 public:
-    void interaction();
-	Monster();
+    Stats stats;
+    bool interaction(Player);
+    Monster();
 	~Monster();
 };
 
